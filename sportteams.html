@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta>
+      <title>Sport Teams</title>
+	  
+<!-- This is the link to the main stylesheet. -->	
+<!--<link rel="stylesheet" href="main.css">-->
+  <link id='csslink' rel="stylesheet" href="main.css" />
+
+	<!-- Next is the JavaScript code that makes the "Switch Style" button work. -->
+  <script>
+	    function toggleCSS() {
+          // Obtains the <link> element that links to the css (by using its id).
+          var currentCSS = document.getElementById('csslink');
+
+          // Change the value of href attribute to change the css file.
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } else {
+            currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+  </script>
+	  
+   </head>
+   <body>
+   <nav>
+<div class="nav">
+            <a href="index.html">Home</a> &nbsp;
+            <a href="attractions.html">Theme Park Attractions</a> &nbsp;
+            <a href="sportteams.html" class = "active">Sport Teams</a>
+			<div class ="button">
+			<button onclick="toggleCSS()" type = "button" style="float:right;" class="button;">Alternative Style</button>
+			</div>
+	</nav>
+      <h2>Sport Teams Native to the Tampa Bay Area</h2>
+<table align="center"  border ="1" WIDTH = 75% HEIGHT = 75>
+      <tr>
+         <th>Sport</th>
+         <th>Name</th>
+         <th>Number of Players</th>
+		 <th>Stadium Capacity</th>
+      </tr>
+      <tr>
+         <td>Hockey</td>
+         <td>Tampa Bay Lightning</td>
+         <td>22</td>
+		 <td>21,500</td>
+      </tr>
+      <tr>
+         <td>Football</td>
+         <td>Tampa Bay Buccaneers</td>
+         <td>87</td>
+		 <td>65,890</td>
+      </tr>
+	  <tr>
+         <td>Baseball</td>
+         <td>Tampa Bay Rays</td>
+         <td>40</td>
+		 <td>42,735</td>
+      </tr>
+</table>
+<main>
+<p class ="elink">
+<ul style ="text-align:center; list-style-position:inside; list-style-type:none; font-size:20px">
+<li>Visit Amalie Arena @ 401 Channelside Dr, Tampa, FL 33602 - <a href="https://www.amaliearena.com/arena-info" target="blank">Click Here to View Webpage</a></li>
+<li>Visit Raymond James Statium @ 4201 N Dale Mabry Hwy, Tampa, FL 33607 - <a href="https://raymondjamesstadium.com/" target="blank">Click Here to View Webpage</a></li>
+<li>Visit Tropicana Fields @ 1 Tropicana Dr., St. Petersburg, FL 33705 - <a href="https://www.mlb.com/rays/ballpark" target="blank">Click Here to View Webpage</a></li>
+</ul>
+</p>
+</main>
+      <footer><p> &copy; 2023 David DiCesare Group 9</p></footer>
+   </body>
+</html>
