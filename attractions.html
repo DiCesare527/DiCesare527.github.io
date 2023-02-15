@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta>
+      <title>Theme Park Attractions</title>
+	  
+<!-- This is the link to the main stylesheet. -->	
+<!--<link rel="stylesheet" href="main.css">-->
+  <link id='csslink' rel="stylesheet" href="main.css" />
+
+	<!-- Next is the JavaScript code that makes the "Switch Style" button work. -->
+  <script>
+	    function toggleCSS() {
+          // Obtains the <link> element that links to the css (by using its id).
+          var currentCSS = document.getElementById('csslink');
+
+          // Change the value of href attribute to change the css file.
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } else {
+            currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+  </script>
+	  
+   </head>
+   <body>
+   <nav>
+<div class="nav">
+            <a href="index.html">Home</a> &nbsp;
+            <a href="attractions.html" class = "active">Theme Park Attractions</a> &nbsp;
+            <a href="sportteams.html">Sport Teams</a>
+			<div class ="button">
+			<button onclick="toggleCSS()" type = "button" style="float:right;" class="button;">Alternative Style</button>
+			</div>
+	</nav>
+		<section>
+      <h2>Theme Parks In Tampa</h2>
+      <div class="container">
+	  <div class="writing-text">
+         Tampa is home to many different amusements parks such as</div>
+      </div>
+	  <ul>
+	  <div>
+	  <li><a class ="elink" href="https://buschgardens.com/tampa/?&bidkw=busch%20gardens&dvc=c&h=http://clickserve.dartsearch.net/link/click?lid=43700063159249110&ds_s_kwgid=58700007019649189&gclid=CjwKCAiAlp2fBhBPEiwA2Q10DyhME0VuKthsyfjFKbXq1c3jMvpspDaCIt2dae8N1OQB4OBIQzSRihoC9GEQAvD_BwE&gclsrc=aw.ds" target="blank">Visit Busch Gardens</a></li>
+	  <img alt="Busch Gardens"
+    src="https://assets.simpleviewinc.com/simpleview/image/fetch/q_75/https://assets.simpleviewinc.com/simpleview/image/upload/crm/tampabay/200110_BGTB_DRONE_01_DJI_0293_A7428A11-5056-A36A-08BB794869A8957E-a74284f75056a36_a7429164-5056-a36a-081023fd894cfb1c.jpg"
+    width="500" height="300">
+	  
+	  <li><a class = "elink" href="https://adventureisland.com/?gclid=CjwKCAiAlp2fBhBPEiwA2Q10Dxrddh8wjGw71NFq9HNkv7e3ru2Q2jlKgAiHfGy4fxTEtv5lXZ45tBoCbIEQAvD_BwE&gclsrc=aw.ds" target="blank">Visit Adventure Island</a></li>
+	  <img alt="Adventure Island"
+    src="https://www.enjoyflorida.com/wp-content/uploads/2020/03/aerial-view-multiple-water-slide-rides-adventure-island-tampa-bay.jpg"
+    width="500" height="300">
+	  
+	  <li><a class = "elink" href="https://zootampa.org/" target="blank">Visit Lowry Park Zoo</a></li>
+	  <img alt="Adventure Island"
+    src="https://www.enjoyflorida.com/wp-content/uploads/2020/06/tour-group-with-families-viewing-wildlife-from-open-air-bus-view-animals-zoo-tampa-at-lowry-park.jpg"
+    width="500" height="300">"
+	</div>
+	  </ul>
+   </section>
+     <footer><p> &copy; 2023 David DiCesare Group 9</p></footer>
+
+   </body>
+</html>
