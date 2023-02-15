@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+
+<!-- This is the link to the main stylesheet. -->	
+<!--<link rel="stylesheet" href="main.css">-->
+  <link id='csslink' rel="stylesheet" href="main.css" />
+
+	<!-- Next is the JavaScript code that makes the "Switch Style" button work. -->
+  <script>
+	    function toggleCSS() {
+          // Obtains the <link> element that links to the css (by using its id).
+          var currentCSS = document.getElementById('csslink');
+
+          // Change the value of href attribute to change the css file.
+          if (currentCSS.getAttribute('href') == 'main.css') {
+            currentCSS.setAttribute('href', 'alternate.css');
+          } else {
+            currentCSS.setAttribute('href', 'main.css');
+          }
+      }
+  </script>
+	  
+</head>
+<body>
+
+  <nav>
+<div class="nav">
+            <a href="index.html" class = "active">Home</a> &nbsp;
+            <a href="attractions.html">Theme Park Attractions</a> &nbsp;
+            <a href="sportteams.html">Sport Teams</a>
+			<div class ="button">
+			<button onclick="toggleCSS()" type = "button" style="float:right;" class="button;">Alternative Style</button>
+			</div>
+	</nav>
+<h1>Tampa, FL Tour Guide</h1>
+  <section>
+      <h2>Population:</h2>
+	  <div class="container">
+	  <div class="writing-text">
+         Tampa's population is listed at nearly 400,000 individuals! With 399,734 residents, it ranks along the 3rd most populous city in Florida, and the 51st most populous<br> in all of the United States. Between the years of 2010 and 2020, Tampa Fl experienced a growth of roughly 27%, nearly tripling their population. Tampa is <br>a fast-growing city, who's projections seems to be on the rise and not slowing down anytime soon.</div>
+        </div>
+   </section>
+   <section>
+      <h2>5 of the Top 10 Beaches near Tampa:</h2>
+      <div class="container">
+	  <div class="writing-text2">
+		If beaches are your thing, Tampa is situated around some of the best beaches known to Florida.</div>
+	   </div>
+	   <ul>
+	   <div>
+	   <li><a class = "elink" href="https://www.visitstpeteclearwater.com/communities/clearwater-beach" target="blank">Visit Clearwater Beach</a></li>
+	   <img alt="Clearwater Beach"
+    src="https://a.cdn-hotels.com/gdcs/production109/d1598/eac30ca7-5528-4044-b960-55dcf8b123a5.jpg"
+    width="500" height="300">
+	
+	   <li><a class = "elink" href="https://www.visitstpeteclearwater.com/communities/indian-shores-indian-rocks-beach" target="blank">Visit Indian Rocks Beach</a></li>
+	   <img alt="Indian Rocks Beach"
+    src="https://www.travellens.co/content/images/2021/08/Indian-Rocks-Beach.jpg"
+    width="500" height="300">
+	
+	   <li><a class = "elink" href="https://www.stpetebeach.org/" target="blank">Visit St. Pete Beach</a></li>
+	   <img alt="St. Pete Beach"
+    src="https://tampabayparenting.com/wp-content/uploads/2022/11/20141111-404-NPCC-scaled-1.jpg"
+    width="500" height="300">
+	
+	
+	   <li><a class = "elink" href="https://www.mytreasureisland.org/treasure_island_beach/index.php" target="blank">Visit Treasure Island</a></li>
+	   <img alt="Treasure Island"
+	   src="https://www.visitlagunabeach.com/imager/s3-us-west-1_amazonaws_com/laguna-craft/craft/drone_Treasure-island_844285ee339c9cdd414d98916d77d4f8.png"
+	   width="500" height="300">
+	  
+	   
+	   <li><a class = "elink" href="https://www.visittampabay.com/listings/ben-t-davis-beach/5041/" target="blank">Visit Ben T. Davis Beach</a></li>
+	   <img alt="Ben T. Davis Beach"
+    src="https://s3.amazonaws.com/pointsearchwp-images/wp-content/uploads/2019/03/5c87f6bf49d1b659e205dd12/ps_1_1552415906_2.2.jpg"
+    width="500" height="300">
+	</div>
+	  </ul>
+	   <p>Source: Skye Rodgers, USA Today</p>
+   </section>
+   <footer><p> &copy; 2023 David DiCesare Group 9</p></footer>
+</body>
+</html>
