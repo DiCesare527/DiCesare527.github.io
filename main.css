@@ -1,0 +1,76 @@
+.nav {
+  background-color: orange;
+  overflow: hidden;
+}
+.nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a:hover {
+  background-color: grey;
+  color: black;
+}
+.nav a.active {
+  background-color: red;
+  color: white;
+}
+
+.elink a:link{
+	color:blue;
+}
+.elink a:visited{
+	color:purple;
+}
+.elink a:active{
+	color:red;
+}
+.button{
+	font-size:20px;
+	background-color:white;
+}
+.button:hover{
+	background-color:grey;
+	color:white;
+}
+.button{
+	font-size:20px;
+	background-color:white;
+}
+body{
+	font-family:Arial;
+	font-size:20;
+	font-color:black;
+	background-color:white;
+	margins:10px 20px;
+	padding:10px 10px 10px;
+	
+}
+.writing-text{
+	overflow: hidden;
+	border-right:.15em black;
+	animation:typing 2s forwards;
+	font-size: 16px;
+	width: 0;
+	white-space:nowrap;
+}
+.writing-text2{
+	overflow: hidden;
+	border-right:.15em black;
+	animation:typing 2s forwards;
+	font-size: 16px;
+	width: 0;
+	white-space:nowrap;
+	animation-delay:2s;
+}
+.container{
+	display: inline-block;
+}
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
